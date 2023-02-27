@@ -35,7 +35,7 @@ const Navbar = () => {
                         height={30}
                         alt="Your Company"
                         className="h-8 w-auto sm:h-10"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        src="/2572631.png?color=indigo&shade=600"
                       />
                     </a>
                   </Link>
