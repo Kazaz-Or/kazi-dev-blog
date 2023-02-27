@@ -1,4 +1,4 @@
-import {  GetStaticPaths, GetStaticProps, NextPage } from 'next/types';
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next/types';
 import { ParsedUrlQuery } from 'querystring';
 import hljs from 'highlight.js/lib/common';
 import 'highlight.js/styles/github-dark.css';
@@ -26,8 +26,7 @@ const BlogDetail: NextPage<Props> = ({blog}) => {
           <BlogHeader blog={blog}/>
           <article className="prose lg:prose-md markdown-image-50">
             <div className="mb-4"
-              dangerouslySetInnerHTML={{ __html: blog.content}}
-            />
+              dangerouslySetInnerHTML={{ __html: blog.content}}/>
           </article>
         </div>
       </PageLayout>
