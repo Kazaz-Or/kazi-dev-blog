@@ -8,3 +8,8 @@
     marge: auto;
     }
 }
+
+
+.page-layout {
+    min-height: calc(100vh - 232px);
+}
