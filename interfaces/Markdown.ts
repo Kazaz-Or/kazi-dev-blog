@@ -6,3 +6,8 @@ export interface MarkdownItem {
     content: string;
     slug: string;
 };
+
+
+export interface SearchContent extends Partial<MarkdownItem> {
+    category: string;
+}
