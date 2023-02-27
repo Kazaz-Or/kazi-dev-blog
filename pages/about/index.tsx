@@ -1,9 +1,9 @@
 /* eslint-disable react/no-children-prop */
-import { GetStaticProps, NextPage } from "next";
-
-import { PageLayout } from "@components/layouts";
+import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+
+import { PageLayout } from "@components/layouts";
 
 
 const PortfolioPage: NextPage = () => {
@@ -29,7 +29,6 @@ useEffect(() => {
     </>
   )
 }
-
 
 
 export default PortfolioPage;
