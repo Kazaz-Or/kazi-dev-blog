@@ -24,7 +24,7 @@ const ContentSearch = () => {
       }
     }
 
-  const escapeKeyCallback = (event: KeyboardEvent) => {
+  const escapeKeyCallback = (event: globalThis.KeyboardEvent) => {
     if (event.key === "Escape" && results.length > 0) {
       handleClickOutside();
     }

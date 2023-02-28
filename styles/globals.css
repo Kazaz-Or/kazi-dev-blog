@@ -9,7 +9,13 @@
     }
 }
 
-
 .page-layout {
     min-height: calc(100vh - 232px);
 }
+
+.prose pre {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+  }
