@@ -17,7 +17,7 @@ useEffect(() => {
 
   return (
     <>
-        <PageLayout pageTitle="About Me">
+        <PageLayout pageTitle="// About Me">
         <div className="w-2/3 m-auto">
         <article className="prose lg:prose-md">
         <div className="mb-14">
