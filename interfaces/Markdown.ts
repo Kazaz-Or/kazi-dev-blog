@@ -3,6 +3,7 @@
 export interface MarkdownItem {
     title: string;
     description: string;
+    date: string;
     content: string;
     slug: string;
 };
