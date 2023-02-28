@@ -33,7 +33,7 @@ export const getStaticProps: GetStaticProps = () => {
   saveSearchData(blogs);
 
   return {
-    props: {blogs}
+    props: {blogs: blogs.slice(0, 8)}
   }
 }
 
