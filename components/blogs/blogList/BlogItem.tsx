@@ -3,11 +3,12 @@ import Image from 'next/legacy/image';
 import { FunctionComponent } from 'react';
 
 import { Blog } from '@interfaces/Blog';
+import { shortify } from '@lib/client/utils';
+
 
 type Props = {
   blog: Blog
 }
-
 
 export const BlogItem: FunctionComponent<Props> = ({blog}) => {
     return (
@@ -35,7 +36,7 @@ export const BlogItem: FunctionComponent<Props> = ({blog}) => {
                 { blog.title }
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              { blog.description }
+              { shortify(blog.description) }
             </p>
           </div>
         </div>
