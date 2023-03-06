@@ -1,5 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next';
 import Link from 'next/link';
+import { Analytics } from '@vercel/analytics/react';
 
 import { BlogList } from '../components/blogs';
 import { BaseLayout } from '../components/layouts';
@@ -24,6 +25,7 @@ const Home: NextPage<Props> = ({blogs}) => {
           </Link>
       </h2>
       <BlogList blogs={blogs}/>
+      <Analytics />
     </BaseLayout>
   )
 }
