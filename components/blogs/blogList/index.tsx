@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 
-import { Blog } from '@/interfaces/Blog';
 import { BlogItem } from './BlogItem';
+import { Blog } from '@interfaces/Blog';
 
 type Props = {
   blogs: Blog[]
