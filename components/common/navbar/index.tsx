@@ -29,11 +29,11 @@ const Navbar = () => {
                 <div className="flex w-full items-center justify-between md:w-auto">
                   <Link legacyBehavior href="/">
                     <a>
-                      <span className="sr-only">Your Company</span>
+                      <span className="sr-only">Kazis Dev Blog</span>
                       <Image
                         width={30}
                         height={30}
-                        alt="Your Company"
+                        alt="Kazi's Dev Blog"
                         className="h-8 w-auto sm:h-10"
                         src="/2572631.png?color=indigo&shade=600"
                       />
@@ -82,7 +82,7 @@ const Navbar = () => {
                       height={20}
                       width={20}
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                      src="/2572631.png?color=indigo&shade=600"
                       alt=""
                     />
                   </div>
