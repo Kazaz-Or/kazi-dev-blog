@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+
 import { Blog } from '@interfaces/Blog';
 import { getBlogs } from '@lib/blogs';
 import { PageLayout } from '@components/layouts';
