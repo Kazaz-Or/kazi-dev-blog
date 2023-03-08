@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Image from 'next/legacy/image'
+import Image from 'next/legacy/image';
 
 import { Blog } from "@interfaces/Blog";
 

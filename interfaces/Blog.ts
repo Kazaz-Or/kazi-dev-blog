@@ -6,4 +6,5 @@ export interface Blog extends MarkdownItem {
     authorImage: string;
     author: string;
     date: string;
+    tags: string[];
 };
