@@ -10,18 +10,13 @@ jobs:
     
     steps:
       - name: Checkout
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Install dependencies
-      - uses: actions/setup-node@v3
+      - name: Install dependencies & Run build
+        uses: actions/setup-node@v3
         with:
           node-version: 16
-        run: |
-          pnpm install
-        
-      - name: Run Build Check
-        shell: bash
-        run: |
-          npm run build
+      - run: npm i
+      - run: npm run build
