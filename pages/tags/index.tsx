@@ -1,7 +1,6 @@
 import { GetStaticProps, NextPage } from 'next';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Image from 'next/legacy/image';
 import { Fragment } from 'react';
 
 import { getBlogs } from '@lib/blogs';
@@ -70,14 +69,6 @@ const TagsPage: NextPage<Props> = ({ tagCounts }) => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex-1 ml-9">
-          <Image
-            width={600}
-            height={800}
-            src="https://images.unsplash.com/photo-1631624215749-b10b3dd7bca7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-            alt=""
-          />
         </div>
       </div>
     </PageLayout>
