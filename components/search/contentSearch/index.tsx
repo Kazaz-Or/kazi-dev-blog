@@ -11,10 +11,12 @@ const ContentSearch = () => {
   const router = useRouter();
   const [results, setResults] = useState<SearchContent[]>([]);
   const [query, setQuery] = useState("");
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const handleClickOutside = () => {
     setResults([]);
     setQuery("");
+    setActiveIndex(-1);
   };
 
   useEffect(() => {
@@ -22,28 +24,44 @@ const ContentSearch = () => {
       if (results.length > 0 && ref.current && !ref.current.contains(event.target as Node)) {
         handleClickOutside();
       }
-    }
-
-  const escapeKeyCallback = (event: globalThis.KeyboardEvent) => {
-    if (event.key === "Escape" && results.length > 0) {
-      handleClickOutside();
-    }
-  }
-
+    };
+  
+    const handleArrowKeyPress = (event: globalThis.KeyboardEvent) => {
+      if (event.key === 'ArrowUp' && results.length > 0) {
+        event.preventDefault();
+        setActiveIndex(prevIndex => Math.max(prevIndex - 1, 0));
+      } else if (event.key === 'ArrowDown' && results.length > 0) {
+        event.preventDefault();
+        setActiveIndex(prevIndex => Math.min(prevIndex + 1, results.length - 1));
+      }
+    };
+  
+    const escapeKeyCallback = (event: globalThis.KeyboardEvent) => {
+      if (event.key === "Escape" && results.length >= 0) {
+        handleClickOutside();
+      } else if (event.key === "Enter" && results.length > 0 && activeIndex >= 0) {
+        event.preventDefault();
+        router.push(`/blogs/${results[activeIndex].slug}`);
+      } else {
+        handleArrowKeyPress(event);
+      }
+    };
+  
     document.addEventListener('click', callback);
     document.addEventListener('keydown', escapeKeyCallback);
-
+  
     return () => {
       document.removeEventListener('click', callback);
       document.removeEventListener('keydown', escapeKeyCallback);
-    }
-  }, [results.length])
+    };
+  }, [results, activeIndex, router]);
 
   const performSearch = (event: ChangeEvent<HTMLInputElement>) => {
     const {value} = event.target;
     const results = ContentIndexer.search(value);
     setResults(results);
     setQuery(value);
+    setActiveIndex(-1);
   }
 
   return (
@@ -71,18 +89,21 @@ const ContentSearch = () => {
           className="w-80 border-solid border rounded-md z-10 bg-white max-h-80 overflow-auto absolute select is-multiple"
           role="listbox">
           {
-            results.map(result => 
+            results.map((result, index) => (
               <li
                 key={result.slug}
                 onClick={() => router.push(`/blogs/${result.slug}`)}
-                className={`hover:bg-indigo-600 hover:text-white p-3 relative cursor-pointer`}>
+                className={`${
+                  index === activeIndex ? 'bg-indigo-600 text-white' : ''
+                } hover:bg-indigo-600 hover:text-white p-3 relative cursor-pointer`}
+              >
                 <div className="font-bold text-sm truncate">{result.title}</div>
                 <p className="truncate text-sm">{result.description}</p>
-                <span 
-                  className="mt-2 text-xs text-white bg-gray-800 px-2 py-1 rounded-xl">{result.category}
+                <span className="mt-2 text-xs text-white bg-gray-800 px-2 py-1 rounded-xl">
+                  {result.category}
                 </span>
-            </li>  
-          )}
+              </li>
+            ))}
         </ul>
       }
     </>
