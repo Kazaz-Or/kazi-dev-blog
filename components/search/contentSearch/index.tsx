@@ -36,23 +36,29 @@ const ContentSearch = () => {
       }
     };
   
-    const escapeKeyCallback = (event: globalThis.KeyboardEvent) => {
-      if (event.key === "Escape" && results.length >= 0) {
-        handleClickOutside();
-      } else if (event.key === "Enter" && results.length > 0 && activeIndex >= 0) {
+    const handleEnterKeyPress = (event: globalThis.KeyboardEvent) => {
+      if (event.key === 'Enter' && activeIndex !== -1 && results.length > 0) {
         event.preventDefault();
         router.push(`/blogs/${results[activeIndex].slug}`);
+        handleClickOutside();
+      }
+    };
+    
+    const keyboardKeyCallback = (event: globalThis.KeyboardEvent) => {
+      if (event.key === "Escape" && results.length > 0) {
+        handleClickOutside();
       } else {
         handleArrowKeyPress(event);
+        handleEnterKeyPress(event);
       }
     };
   
     document.addEventListener('click', callback);
-    document.addEventListener('keydown', escapeKeyCallback);
+    document.addEventListener('keydown', keyboardKeyCallback);
   
     return () => {
       document.removeEventListener('click', callback);
-      document.removeEventListener('keydown', escapeKeyCallback);
+      document.removeEventListener('keydown', keyboardKeyCallback);
     };
   }, [results, activeIndex, router]);
 
