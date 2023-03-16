@@ -17,7 +17,7 @@ type Props = {
 
 const BlogDetail: NextPage<Props> = ({blog}) => {
   useEffect(() => {
-    hljs.initHighlighting();
+    hljs.highlightAll();
   }, []);
 
   return (
