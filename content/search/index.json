@@ -1,8 +1,8 @@
 [
   {
     "slug": "js-rewire",
-    "title": "Use Rewire for unit testing your NodeJS code",
-    "description": "Unit testing in NodeJS isn't a simple task. I've tried a few libraries and found the rewire was the most practical one",
+    "title": "Leverage Rewire for Unit Testing in Node.js",
+    "description": "Unit testing in Node.js can be challenging. After trying various libraries, I found Rewire to be the most practical for testing purposes",
     "category": "blogs"
   },
   {
