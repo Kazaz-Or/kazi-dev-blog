@@ -17,7 +17,6 @@ The new hardware architecture was based on something called PHY to PHY, which me
 This architecture was entirely different than what out other products were designed.
 
 ![PHY-TO-PHY](/images/phy-system-diagram.jpg)
-<img src="/images/phy-system-diagram.jpg" alt="PHY-TO-PHY" width="1100" height="300" />
 
 This required some testing of course.
 
