@@ -1,6 +1,6 @@
 ---
-title: "Use Rewire for unit testing your NodeJS code"
-description: Unit testing in NodeJS isn't a simple task. I've tried a few libraries and found the rewire was the most practical one
+title: "Leverage Rewire for Unit Testing in Node.js"
+description: Unit testing in Node.js can be challenging. After trying various libraries, I found Rewire to be the most practical for testing purposes
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/rewire.jpg
@@ -8,18 +8,18 @@ date: "2023-03-19"
 tags: ["Javascript", "NodeJS", "Testing"]
 ---
 
-I'll start with a full disclosure - For Unit testing proposes, so far i only had a chance to write tests using Jest. On my current job, I had an opportunity to write unit tests for a small project, and with it i had a chance to choose a new testing library.
+I'll start with a full disclosure - Up until now, I have only written unit tests using Jest. However, at my current job, I had the opportunity to work on a small project that allowed me to choose a new testing library.
 
-After a short research i went with Mocha as a test runner, and with Chai as assertion library. Then I reached the fun part - Mocking and Spying.
-The most trivial option was Sinon which i found working great as a spy (for example, you'd like to know if a certain log was printed.)
-But when it comes to Mocking(or Stubbing), it wasn't easy at all.
+After some research, I decided to go with Mocha as a test runner and Chai for assertions. Then I reached the fun part - Mocking and Spying.
+The most obvious choice was Sinon, which works great as a spy (for example, if you want to know whether a certain log was printed). However, when it came to Mocking (or Stubbing), it wasn't easy at all.
+
 If you're interested - I found this article back then and I found it to be quite true ([why is it so hard to test in NodeJS](https://www.vinnie.work/blog/2021-09-18-why-so-hard-testing-with-es6-imports))
 
-So after struggling a lot with Sinon, I reached out the Discord NodeJS community with a very specific question:
+After struggling with Sinon, I turned to the Discord Node.js community with a specific question:
 
 ![discordquestion](/images/discord-node-test.png)
 
-The first answer was a link to [rewire](https://github.com/jhnns/rewire) repository. I must say, once I started using it, I could'nt stop. It makes mocking so easy.
+The first response was a link to the [rewire](https://github.com/jhnns/rewire) repository. I must say, once I started using it, I couldn't stop. It made mocking incredibly easy.
 
 To install it simply run:
 
@@ -30,16 +30,16 @@ import it:
 ```js
 const rewire = require('rewire');
 ```
+To initialize it, you need to "rewire" the module that contains the functions, methods, or variables you'd like to mock.
 
-To initialize it you need to "rewire" the module you'd like to mock, or more precise to say, is the module that has the functions/methods/variables you'd like to mock.
 ```js
 const mockedIndex = rewire('../../index');
 ```
 
-So let's take a look at some examples:
+So let's look at some examples:
 
 I'll start with the original question I raised in the Node Discord server. 
-This is my original function (just for the sake of the example):
+Here's my original function (just for the sake of the example):
 
 ```js
 async function updatePolicy(project, policy, file) {
@@ -55,8 +55,8 @@ async function updatePolicy(project, policy, file) {
         [...]
 }
 ```
-I just wanted a simple test case that checks that given the right arguments, the correct function is called.
-Because i had many test cases like these, I created a more "generic" function the just receives the function i'd like to test as an argument.
+I wanted a simple test case to check that the correct function is called given the right arguments. 
+Since I had many test cases like these, I created a more "generic" function that receives the function I'd like to test as an argument.
 
 ```js
 // rewire the module
@@ -142,6 +142,10 @@ it('should add event to US catalog if countryAvailability includes US', () => {
 });
 ```
 
+In conclusion, `rewire` proved to be the simplest mocking library I've had the opportunity to use in Node.js projects. 
+Ultimately, pairing it with a dynamic test runner like Mocha made for an easy choice compared to other libraries. 
 
-To sum up, `rewire` was the most simple mocking library I had a chance to work with it on NodeJS projects, using it with a dynamic test runner such as Mocha was an easy decision eventually, compared to other libraries.
-Eventually I found my self replacing all other mocks such as Sinon Stubbing with rewire, and never looked back.
+As a result, I ended up replacing all other mocks, such as Sinon Stubbing, with Rewire and haven't looked back since.
+
+
+
