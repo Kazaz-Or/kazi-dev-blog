@@ -76,7 +76,7 @@ const checkFunctionCall = (functionName, done, file) => {
 
 // test case
 
-it('doesStatusRequireEnablingSafeMode function called', (done) => {
+it('statusEnable function called', (done) => {
     let file = "example argument";
 
     checkFunctionCall('statusEnable', done, file);
@@ -146,6 +146,3 @@ In conclusion, `rewire` proved to be the simplest mocking library I've had the o
 Ultimately, pairing it with a dynamic test runner like Mocha made for an easy choice compared to other libraries. 
 
 As a result, I ended up replacing all other mocks, such as Sinon Stubbing, with Rewire and haven't looked back since.
-
-
-
