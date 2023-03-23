@@ -1,5 +1,11 @@
 [
   {
+    "slug": "middleware-fastapi",
+    "title": "Keep your routes clean - Use Middleware for extra logic",
+    "description": "I try to keep my routes as \"clean\" as i can, additional logic will be executed via middleware - Here's a small example I did with FastAPI",
+    "category": "blogs"
+  },
+  {
     "slug": "js-rewire",
     "title": "Leverage Rewire for Unit Testing in Node.js",
     "description": "Unit testing in Node.js can be challenging. After trying various libraries, I found Rewire to be the most practical for testing purposes",
