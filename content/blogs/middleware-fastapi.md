@@ -4,7 +4,7 @@ description: I try to keep my routes as "clean" as i can, additional logic will 
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/fastapi-vscode.png
-date: "2023-033-23"
+date: "2023-03-23"
 tags: ["Python", "FastAPI"]
 ---
 
