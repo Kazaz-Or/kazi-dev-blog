@@ -1,5 +1,11 @@
 [
   {
+    "slug": "pytest-custom-markers",
+    "title": "Organizing your tests with custom markers in Pytest",
+    "description": "This is the easiest way to categorize and maximize the flexibility and readability of your testing workflow and results",
+    "category": "blogs"
+  },
+  {
     "slug": "dotenv",
     "title": "Using secrets or private environment variables? .env is the answer",
     "description": "How can we hide API keys, secrets and passwords in our code, especially if pushing our code to an external repository? How can we run an application locally using these env vars?",
