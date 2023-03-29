@@ -1,5 +1,5 @@
 ---
-title: "Using secrets or private environment variables? .env is the answer"
+title: "Using Secrets or Private Environment Variables? .env is the Answer"
 description: How can we hide API keys, secrets and passwords in our code, especially if pushing our code to an external repository? How can we run an application locally using these env vars?
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4

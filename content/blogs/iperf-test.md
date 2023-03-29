@@ -1,5 +1,5 @@
 ---
-title: "How I saved my company a lot of money only using a simple Iperf test"
+title: "How I Saved My Company a lot of Money Only Using a Simple Iperf Test"
 description: The test that saved my company a significant amount of time and effort - Using two PCB's, RJ45 cable, and the Iperf tool
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4

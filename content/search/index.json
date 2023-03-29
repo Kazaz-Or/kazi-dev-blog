@@ -1,19 +1,25 @@
 [
   {
+    "slug": "map-js",
+    "title": "You Should Really Use Map When Possible",
+    "description": "The advantages of using Map in JavaScript over other Data Types",
+    "category": "blogs"
+  },
+  {
     "slug": "pytest-custom-markers",
-    "title": "Organizing your tests with custom markers in Pytest",
+    "title": "Organizing Your Tests with Custom Markers in Pytest",
     "description": "This is the easiest way to categorize and maximize the flexibility and readability of your testing workflow and results",
     "category": "blogs"
   },
   {
     "slug": "dotenv",
-    "title": "Using secrets or private environment variables? .env is the answer",
+    "title": "Using Secrets or Private Environment Variables? .env is the Answer",
     "description": "How can we hide API keys, secrets and passwords in our code, especially if pushing our code to an external repository? How can we run an application locally using these env vars?",
     "category": "blogs"
   },
   {
     "slug": "middleware-fastapi",
-    "title": "Keep your routes clean - Use Middleware for extra logic",
+    "title": "Keep Your Routes Clean - Use Middleware for Extra Logic",
     "description": "I try to keep my routes as \"clean\" as i can, additional logic will be executed via middleware - Here's a small example I did with FastAPI",
     "category": "blogs"
   },
@@ -25,7 +31,7 @@
   },
   {
     "slug": "iperf-test",
-    "title": "How I saved my company a lot of money only using a simple Iperf test",
+    "title": "How I Saved My Company a lot of Money Only Using a Simple Iperf Test",
     "description": "The test that saved my company a significant amount of time and effort - Using two PCB's, RJ45 cable, and the Iperf tool",
     "category": "blogs"
   }

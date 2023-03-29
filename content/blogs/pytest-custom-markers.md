@@ -1,5 +1,5 @@
 ---
-title: "Organizing your tests with custom markers in Pytest"
+title: "Organizing Your Tests with Custom Markers in Pytest"
 description: This is the easiest way to categorize and maximize the flexibility and readability of your testing workflow and results
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
