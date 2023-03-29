@@ -1,5 +1,5 @@
 ---
-title: "Keep your routes clean - Use Middleware for extra logic"
+title: "Keep Your Routes Clean - Use Middleware for Extra Logic"
 description: I try to keep my routes as "clean" as i can, additional logic will be executed via middleware - Here's a small example I did with FastAPI
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
