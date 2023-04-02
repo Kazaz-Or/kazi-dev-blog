@@ -1,5 +1,5 @@
 ---
-title: "Different Ways to Check a Variable is in Python"
+title: "Different Ways to Check a Variable type in Python"
 description: Type checking is a thing you do a lot in Python as it can help prevent simple yet frustrating errors that may arise from incorrect variable types. In fact, it was one of the earliest and most lame bug I encountered in my programming journey
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
