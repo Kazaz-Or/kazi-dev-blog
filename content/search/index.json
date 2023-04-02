@@ -1,5 +1,11 @@
 [
   {
+    "slug": "python-type-checking",
+    "title": "Different Ways to Check a Variable is in Python",
+    "description": "Type checking is a thing you do a lot in Python as it can help prevent simple yet frustrating errors that may arise from incorrect variable types. In fact, it was one of the earliest and most lame bug I encountered in my programming journey",
+    "category": "blogs"
+  },
+  {
     "slug": "map-js",
     "title": "You Should Really Use Map When Possible",
     "description": "The advantages of using Map in JavaScript over other Data Types",
