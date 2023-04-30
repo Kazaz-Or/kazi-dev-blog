@@ -1,7 +1,13 @@
 [
   {
+    "slug": "cypress-rest-api-testing",
+    "title": "Testing REST API with Cypress is easy",
+    "description": "Most common use cases of Cypress.io are UI & Visual testing. But, employing Cypress for testing REST APIs can also be quite efficient.",
+    "category": "blogs"
+  },
+  {
     "slug": "python-type-checking",
-    "title": "Different Ways to Check a Variable is in Python",
+    "title": "Different Ways to Check a Variable Type in Python",
     "description": "Type checking is a thing you do a lot in Python as it can help prevent simple yet frustrating errors that may arise from incorrect variable types. In fact, it was one of the earliest and most lame bug I encountered in my programming journey",
     "category": "blogs"
   },
