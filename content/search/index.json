@@ -1,5 +1,11 @@
 [
   {
+    "slug": "python-json-methods",
+    "title": "Exploring JSON in Python: load/loads and dump/dumps",
+    "description": "Dive into the differences between Python's json module methods: json.load/json.loads & json.dump/json.dumps",
+    "category": "blogs"
+  },
+  {
     "slug": "cypress-rest-api-testing",
     "title": "Testing REST API with Cypress is easy",
     "description": "Most common use cases of Cypress.io are UI & Visual testing. But, employing Cypress for testing REST APIs can also be quite efficient.",
