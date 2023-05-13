@@ -1,5 +1,11 @@
 [
   {
+    "slug": "python-poetry",
+    "title": "Python Packaging & Dependency Management with Poetry",
+    "description": "Poetry: Simplify Python dependency management with an intuitive CLI, virtual environments, and seamless packaging & publishing",
+    "category": "blogs"
+  },
+  {
     "slug": "python-json-methods",
     "title": "Exploring JSON in Python: load/loads and dump/dumps",
     "description": "Dive into the differences between Python's json module methods: json.load/json.loads & json.dump/json.dumps",
