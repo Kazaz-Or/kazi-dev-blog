@@ -1,5 +1,11 @@
 [
   {
+    "slug": "python-schedule",
+    "title": "Schedule Your Python Methods with Schedule Library",
+    "description": "Dive into the schedule library through practical examples & a real-life project scenario. Discover how to schedule your Python methods effectively",
+    "category": "blogs"
+  },
+  {
     "slug": "python-poetry",
     "title": "Python Packaging & Dependency Management with Poetry",
     "description": "Poetry: Simplify Python dependency management with an intuitive CLI, virtual environments, and seamless packaging & publishing",
