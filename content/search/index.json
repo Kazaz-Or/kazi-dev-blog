@@ -1,5 +1,11 @@
 [
   {
+    "slug": "python-custom-exceptions",
+    "title": "Crafting Meaningful Custom Exceptions in Python: Best Practices and Common Techniques",
+    "description": "Boost your Python code clarity and debuggability with custom exceptions. Explore best practices for crafting and handling them effectively",
+    "category": "blogs"
+  },
+  {
     "slug": "y2kbug",
     "title": "Y2K Bug: A Look Back at a Critical Moment in Software Development History",
     "description": "Explore the Y2K Bug that threatened global systems at the dawn of the 21st century and understand its impact on software development",
