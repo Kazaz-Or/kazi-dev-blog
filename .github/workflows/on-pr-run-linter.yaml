@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  RunBuildCheck:
+  RunLinter:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     
