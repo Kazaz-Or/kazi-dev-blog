@@ -1,4 +1,4 @@
-name: Run Build Check on PR
+name: Run Linter
 
 on:
   pull_request:
@@ -14,8 +14,15 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install dependencies & Run build
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-      # - run: npm run lint
+          node-version: 18
+        
+      - name: Install dependencies
+        run: |
+          npm ci
+  
+      - name: Run Lint
+        run: |
+            npm run lint
