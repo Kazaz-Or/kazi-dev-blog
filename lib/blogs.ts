@@ -47,5 +47,8 @@ const getBlogs = (): Blog[] => {
 export {
     getBlogs,
     getBlogsSlugs,
-    getBlogByNameWithMarkdown
+    getBlogByNameWithMarkdown,
+    getBlog,
+    getBlogBySlug,
+    getBlogFileNames
 };
