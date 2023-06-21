@@ -1,5 +1,11 @@
 [
   {
+    "slug": "why-you-should-embrace-linux",
+    "title": "Why You Should Switch or Embrace Linux Right Now",
+    "description": "Linux opens possibilities, ignites curiosity & unlocks potential. For me, switching to a Linux distro resulted with a transition from QA a SW dev",
+    "category": "blogs"
+  },
+  {
     "slug": "python-custom-exceptions",
     "title": "Crafting Meaningful Custom Exceptions in Python: Best Practices and Common Techniques",
     "description": "Boost your Python code clarity and debuggability with custom exceptions. Explore best practices for crafting and handling them effectively",
