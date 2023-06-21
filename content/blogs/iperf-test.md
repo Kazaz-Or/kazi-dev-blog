@@ -5,7 +5,7 @@ author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: https://images.unsplash.com/photo-1625571705670-38fc39c923ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1540&q=50
 date: "2023-02-26"
-tags: ["Testing"]
+tags: ["Testing", "Linux"]
 ---
 
 Explaining this article without divulging specific product details may be a challenge, but I'll attempt to simplify it. 
