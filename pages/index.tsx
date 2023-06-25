@@ -25,15 +25,15 @@ const Home: NextPage<Props> = ({blogs}) => {
           </Link>
       </h2>
       <BlogList blogs={blogs}/>
-      <div className="mt-8 mb-4 p-4 bg-indigo-100 rounded-lg text-center">
-        <h2 className="text-xl font-semibold tracking-tight text-gray-900">
-          Explore More Blog Posts
-        </h2>
-        <Link legacyBehavior href="/blogs">
-          <a className="text-lg text-indigo-600 hover:underline">
-            Discover all articles
-          </a>
-        </Link>
+      <div className="mt-8 mb-4 pt-6 px-6 pb-4 bg-white rounded-lg text-center shadow-lg border border-indigo-200">
+      <h2 className="text-xl font-semibold tracking-tight text-gray-900 mb-4">
+        Explore More Blog Posts
+      </h2>
+      <Link legacyBehavior href="/blogs">
+      <a className="inline-block px-6 py-2 text-lg font-medium text-white bg-indigo-600 rounded hover:bg-indigo-500">
+        Discover all articles
+      </a>
+      </Link>
       </div>
       <Analytics />
     </BaseLayout>
