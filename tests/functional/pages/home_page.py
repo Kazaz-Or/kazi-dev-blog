@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-from pages.base import Base
+from functional.pages.base import Base
 
 
 class HomePage(Base):

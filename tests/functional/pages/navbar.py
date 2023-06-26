@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-from pages.base import Base
+from functional.pages.base import Base
 
 
 class NavBar(Base):
@@ -9,3 +9,4 @@ class NavBar(Base):
 
     def open(self, base_url):
         self.page.goto(f"{base_url}")
+        self.page.wait_for_load_state("networkidle")

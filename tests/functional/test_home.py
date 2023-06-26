@@ -1,5 +1,5 @@
-from .pages import elements
-from pages.home_page import HomePage
+from functional.pages import elements
+from functional.pages.home_page import HomePage
 
 
 def test_page_title(sync_page, base_url):
@@ -73,3 +73,20 @@ def test_maximum_number_of_blogs_in_homepage(sync_page, base_url):
     home_page.open(base_url)
     child_div_count = home_page.get_child_div_count(elements.HOMEPAGE_BLOGS_DIV_ELE_XPATH)
     assert child_div_count <= 8, f"Expected the number of child divs to be less than or equal to 8, but found {child_div_count}."
+
+
+def test_explore_discover_more_blogs(sync_page, base_url):
+    home_page = HomePage(sync_page)
+    home_page.open(base_url)
+    element_exists = home_page.check_element_exists(xpath=elements.HOMEPAGE_EXPLORE_MORE_BLOGS_XPATH)
+    assert element_exists, "Element not found."
+
+    element_exists = home_page.check_element_exists(xpath=elements.HOMEPAGE_DISCOVER_ARTICLES_BUTTON_XPATH)
+    assert element_exists, "Element not found."
+
+
+def test_discover_all_articles_link_navigation(sync_page, base_url):
+    home_page = HomePage(sync_page)
+    home_page.open(base_url)
+    link_url = home_page.click_link("link", xpath=elements.HOMEPAGE_DISCOVER_ARTICLES_BUTTON_XPATH)
+    assert link_url == f"{base_url}blogs", "Link navigation failed."

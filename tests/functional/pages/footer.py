@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-from pages.base import Base
+from functional.pages.base import Base
 
 
 class Footer(Base):
@@ -18,10 +18,3 @@ class Footer(Base):
         parts = element_text.split()
         year = int([part for part in parts if part.isdigit()][0])
         return year
-
-    def click_svg(self, xpath: str, expected_url: str):
-        svg_element = self.page.query_selector(f'xpath={xpath}')
-        with self.page.expect_navigation():
-            svg_element.click()
-        self.page.wait_for_url(expected_url)
-        return self.page.url
