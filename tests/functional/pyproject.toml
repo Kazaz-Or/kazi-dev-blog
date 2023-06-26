@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "functional-tests"
+version = "0.1.0"
+description = "functional tests for kazis dev blog using playwright"
+authors = ["Or Kazaz"]
+readme = "README.md"
+packages = [{include = "functional_tests"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+playwright = "^1.35.0"
+pytest = "^7.4.0"
+pytest-playwright = "^0.3.3"
+flake8 = "^6.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
