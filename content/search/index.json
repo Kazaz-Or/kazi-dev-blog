@@ -1,5 +1,11 @@
 [
   {
+    "slug": "typescript-vitest",
+    "title": "I Wish I Knew Vitest When I Started My TypeScript Journey",
+    "description": "I have struggled so badly when it came to testing while using the notorious combination of Node, TypeScript & ES Module. And then I found Vitest",
+    "category": "blogs"
+  },
+  {
     "slug": "why-you-should-embrace-linux",
     "title": "Why You Should Switch or Embrace Linux Right Now",
     "description": "Linux opens possibilities, ignites curiosity & unlocks potential. For me, switching to a Linux distro resulted with a transition from QA a SW dev",
