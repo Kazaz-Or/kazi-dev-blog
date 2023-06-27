@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { getBlogs } from '@lib/blogs';
 import { PageLayout } from '@components/layouts';
 
-import { FaPython, FaJsSquare, FaDocker, FaNodeJs, FaGit, FaLinux, FaUbuntu } from "react-icons/fa";
+import { FaPython, FaJsSquare, FaDocker, FaGit, FaLinux, FaUbuntu, FaNode } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+
 
 type Props = {
   tagCounts: [string, number][];
@@ -50,7 +52,8 @@ const TagsPage: NextPage<Props> = ({ tagCounts }) => {
       <div className={`flex space-x-4 items-center justify-center ${isPulsing ? 'animate-ping' : ''}`}>
           <FaPython size={32} style={{color: '#3776AB'}} />
           <FaJsSquare size={32} style={{color: '#F7DF1E'}} />
-          <FaNodeJs size={32} style={{color: '#539E43'}} />
+          <FaNode size={32} style={{color: '#539E43'}} />
+          <SiTypescript size={32} style={{color: '#3178C6'}} />
           <FaDocker size={32} style={{color: '#2496ED'}} />
           <FaGit size={32} style={{color: '#F05032'}} />
           <FaLinux size={32} style={{color: '#000000'}} />
