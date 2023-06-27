@@ -23,3 +23,23 @@
 .custom-prose {
     max-width: 100%;
 }
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-out;
+    opacity: 1;
+    visibility: visible;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .tooltip-hidden {
+    transform: translateX(-50%) scale(0.9);
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    width: auto;
+  }
