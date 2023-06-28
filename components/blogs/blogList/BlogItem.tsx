@@ -8,9 +8,10 @@ import { shortify } from '@lib/client/utils';
 
 type Props = {
   blog: Blog
+  showDescription?: boolean;
 }
 
-export const BlogItem: FunctionComponent<Props> = ({blog}) => {
+export const BlogItem: FunctionComponent<Props> = ({blog, showDescription = true}) => {
     return (
         <div className="group">
         <div className="h-80 aspect-w-1 aspect-h-1 w-full rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-40">
@@ -35,9 +36,11 @@ export const BlogItem: FunctionComponent<Props> = ({blog}) => {
               <span aria-hidden="true" className="inset-0" />
                 { blog.title }
             </h3>
-            <p className="mt-1 text-sm text-gray-500">
-              { shortify(blog.description) }
-            </p>
+            {showDescription && (
+              <p className="mt-1 text-sm text-gray-500">
+                { shortify(blog.description) }
+              </p>
+            )}
           </div>
         </div>
         <Link legacyBehavior href={`/blogs/${blog.slug}`}>

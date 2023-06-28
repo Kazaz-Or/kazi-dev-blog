@@ -43,6 +43,13 @@ const getBlogs = (): Blog[] => {
     return getAllItems(names, getBlog) as Blog[];
 }
 
+const getRelatedBlogs = (tags: string[], excludeSlug: string): Blog[] => {
+    const allBlogs = getBlogs();
+    const relatedBlogs = allBlogs.filter(blog =>
+      blog.slug !== excludeSlug && blog.tags.some(tag => tags.includes(tag))
+    );
+    return relatedBlogs;
+  }
 
 export {
     getBlogs,
@@ -50,5 +57,6 @@ export {
     getBlogByNameWithMarkdown,
     getBlog,
     getBlogBySlug,
-    getBlogFileNames
+    getBlogFileNames,
+    getRelatedBlogs
 };

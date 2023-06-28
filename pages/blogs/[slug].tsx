@@ -8,15 +8,18 @@ import { useEffect, useState } from 'react';
 
 import { PageLayout } from '@components/layouts';
 import { BlogHeader } from '@components/blogs';
+import RelatedBlogs from '@components/blogs/RelatedBlogs';
 
-import { getBlogByNameWithMarkdown, getBlogsSlugs } from '@lib/blogs';
+import { getBlogByNameWithMarkdown, getBlogsSlugs, getRelatedBlogs } from '@lib/blogs';
 import { Blog } from '@interfaces/Blog';
 
+
 type Props = {
-  blog: Blog
+  blog: Blog;
+  relatedBlogs: Blog[];
 }
 
-const BlogDetail: NextPage<Props> = ({blog}) => {
+const BlogDetail: NextPage<Props> = ({blog, relatedBlogs}) => {
   useEffect(() => {
     hljs.highlightAll();
   }, []);
@@ -52,7 +55,7 @@ const copyToClipboard = () => {
     </a>
   </Link>
     <button onClick={copyToClipboard} className="relative flex items-center" title="Copy to clipboard">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="w-6 h-6">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
         <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
         <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1"></path>
       </svg>
@@ -68,6 +71,14 @@ const copyToClipboard = () => {
             </Link>
             ))}
         </p>
+        <div className="mt-10 flex flex-col justify-center items-center">
+  <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+    Related Articles
+  </h2>
+  <div className="w-full sm:w-8/9 lg:w-8/9 flex justify-center items-center m-auto">
+    <RelatedBlogs blogs={relatedBlogs} />
+  </div>
+</div>
     </div>
       </PageLayout>
     </>
@@ -81,12 +92,12 @@ interface Params extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps<Props, Params> = async (context) => {
   const { slug } = context.params!;
   const blog = await getBlogByNameWithMarkdown(slug);
+  const relatedBlogs = getRelatedBlogs(blog.tags, blog.slug);
 
   return {
-    props: { blog }
+    props: { blog, relatedBlogs }
   }
 }
-
 
 export const getStaticPaths: GetStaticPaths = () => {
   const slugs = getBlogsSlugs();
