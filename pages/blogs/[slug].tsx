@@ -8,15 +8,18 @@ import { useEffect, useState } from 'react';
 
 import { PageLayout } from '@components/layouts';
 import { BlogHeader } from '@components/blogs';
+import RelatedBlogs from '@components/blogs/RelatedBlogs';
 
-import { getBlogByNameWithMarkdown, getBlogsSlugs } from '@lib/blogs';
+import { getBlogByNameWithMarkdown, getBlogsSlugs, getRelatedBlogs } from '@lib/blogs';
 import { Blog } from '@interfaces/Blog';
 
+
 type Props = {
-  blog: Blog
+  blog: Blog;
+  relatedBlogs: Blog[];
 }
 
-const BlogDetail: NextPage<Props> = ({blog}) => {
+const BlogDetail: NextPage<Props> = ({blog, relatedBlogs}) => {
   useEffect(() => {
     hljs.highlightAll();
   }, []);
@@ -68,6 +71,14 @@ const copyToClipboard = () => {
             </Link>
             ))}
         </p>
+        <div className="mt-10 flex flex-col justify-center items-center">
+  <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+    Related Articles
+  </h2>
+  <div className="w-full sm:w-8/9 lg:w-8/9 flex justify-center items-center m-auto">
+    <RelatedBlogs blogs={relatedBlogs} />
+  </div>
+</div>
     </div>
       </PageLayout>
     </>
@@ -81,12 +92,12 @@ interface Params extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps<Props, Params> = async (context) => {
   const { slug } = context.params!;
   const blog = await getBlogByNameWithMarkdown(slug);
+  const relatedBlogs = getRelatedBlogs(blog.tags, blog.slug);
 
   return {
-    props: { blog }
+    props: { blog, relatedBlogs }
   }
 }
-
 
 export const getStaticPaths: GetStaticPaths = () => {
   const slugs = getBlogsSlugs();
