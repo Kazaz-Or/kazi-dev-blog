@@ -1,5 +1,11 @@
 [
   {
+    "slug": "newrelic-fastapi",
+    "title": "Integrating NewRelic with FastAPI & Docker",
+    "description": "Enhance your FastAPI application's monitoring with NewRelic. Gain insights and improve performance with very minimal and simple setup steps.",
+    "category": "blogs"
+  },
+  {
     "slug": "typescript-vitest",
     "title": "I Wish I Knew Vitest When I Started My TypeScript Journey",
     "description": "I have struggled so badly when it came to testing while using the notorious combination of Node, TypeScript & ES Module. And then I found Vitest",
