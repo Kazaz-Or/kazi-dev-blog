@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     dangerouslyAllowSVG: true,
-    domains: ["tailwindui.com", "images.unsplash.com", "avatars.githubusercontent.com", "user-images.githubusercontent.com", "cdn.stocksnap.io"]
+    domains: ["res.cloudinary.com", "images.unsplash.com", "avatars.githubusercontent.com", "user-images.githubusercontent.com", "cdn.stocksnap.io"]
   }
 }
 
