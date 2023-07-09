@@ -1,5 +1,11 @@
 [
   {
+    "slug": "js-api-validation-ajv",
+    "title": "API Validation with AJV and Json Schema",
+    "description": "AJV & Json Schema, a generic yet effective method for JavaScript API request validation",
+    "category": "blogs"
+  },
+  {
     "slug": "newrelic-fastapi",
     "title": "Integrating NewRelic with FastAPI & Docker",
     "description": "Enhance your FastAPI application's monitoring with NewRelic. Gain insights and improve performance with very minimal and simple setup steps.",
