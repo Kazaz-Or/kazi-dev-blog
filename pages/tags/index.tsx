@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { GetStaticProps, NextPage } from 'next';
 import Link from 'next/link';
 
@@ -8,21 +7,11 @@ import { PageLayout } from '@components/layouts';
 import { FaPython, FaJsSquare, FaDocker, FaGit, FaLinux, FaUbuntu, FaNode } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 
-
 type Props = {
   tagCounts: [string, number][];
 };
 
 const TagsPage: NextPage<Props> = ({ tagCounts }) => {
-  const [isPulsing, setPulsing] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setPulsing(false);
-    }, 1800);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <PageLayout pageTitle="// All Tags of Blog Posts">
@@ -49,7 +38,7 @@ const TagsPage: NextPage<Props> = ({ tagCounts }) => {
         </div>
       </div>
       <div className="mt-8 w-full">
-      <div className={`flex space-x-4 items-center justify-center ${isPulsing ? 'animate-ping' : ''}`}>
+      <div className="flex space-x-4 items-center justify-center">
           <FaPython size={32} style={{color: '#3776AB'}} />
           <FaJsSquare size={32} style={{color: '#F7DF1E'}} />
           <FaNode size={32} style={{color: '#539E43'}} />
