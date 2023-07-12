@@ -51,7 +51,7 @@ const BlogHeader: FunctionComponent<Props> = ({blog}) => {
         </div>
         <h1 className="font-bold text-4xl mb-1">{blog.title}</h1>
         <h2 className="blog-detail-header-subtitle mb-2 text-xl text-gray-600">{blog.description}</h2>
-        <div className="h-96 bg-black mb-1 mx-auto w-full relative">
+        <div className="aspect-video relative">
           <Image
             priority
             layout="fill"
