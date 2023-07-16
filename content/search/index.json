@@ -1,5 +1,11 @@
 [
   {
+    "slug": "ubuntu-pacakge-managers-overview",
+    "title": "Package Management in Ubuntu: Overview Guide",
+    "description": "Get to know Learn APT, Snap, Flatpak, and more. Optimize software installation, updates, and removals in this overview guide",
+    "category": "blogs"
+  },
+  {
     "slug": "js-api-validation-ajv",
     "title": "API Validation with AJV and Json Schema",
     "description": "AJV & Json Schema, a generic yet effective method for JavaScript API request validation",
