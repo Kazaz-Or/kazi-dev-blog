@@ -1,6 +1,6 @@
 ---
 title: "Package Management in Ubuntu: Overview Guide"
-description: Get to know Learn APT, Snap, Flatpak, and more. Optimize software installation, updates, and removals in this overview guide
+description: Get to know APT, Snap, Flatpak, and more. Optimize software installation, updates, and removals in this overview guide
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/ubuntu-apt.avif
