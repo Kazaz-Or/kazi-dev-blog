@@ -1,8 +1,14 @@
 [
   {
+    "slug": "ubuntu-pacakge-managers-overview copy",
+    "title": "My QA Manifest As a QA Team Lead/Manager",
+    "description": "As a former QA Engineer/Team Lead/Manager, I've learned a lot about the QA world. Here are my thoughts on what makes an excellent QA team",
+    "category": "blogs"
+  },
+  {
     "slug": "ubuntu-pacakge-managers-overview",
     "title": "Package Management in Ubuntu: Overview Guide",
-    "description": "Get to know Learn APT, Snap, Flatpak, and more. Optimize software installation, updates, and removals in this overview guide",
+    "description": "Get to know APT, Snap, Flatpak, and more. Optimize software installation, updates, and removals in this overview guide",
     "category": "blogs"
   },
   {
