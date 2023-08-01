@@ -1,6 +1,12 @@
 [
   {
-    "slug": "ubuntu-pacakge-managers-overview copy",
+    "slug": "pytest-caplog",
+    "title": "Capturing Logs with Pytest Can't Be Easier",
+    "description": "Pytest's built-in caplog fixture to capture log messages is nothing but amazing. Capture logs for unit testing can't get easier",
+    "category": "blogs"
+  },
+  {
+    "slug": "my-qa-manifest",
     "title": "My QA Manifest As a QA Team Lead/Manager",
     "description": "As a former QA Engineer/Team Lead/Manager, I've learned a lot about the QA world. Here are my thoughts on what makes an excellent QA team",
     "category": "blogs"
