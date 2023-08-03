@@ -22,7 +22,7 @@ type Props = {
 const BlogDetail: NextPage<Props> = ({blog, relatedBlogs}) => {
   useEffect(() => {
     hljs.highlightAll();
-  }, []);
+  }, [blog.content]);
 
 const [showCopiedMsg, setShowCopiedMsg] = useState(false);
 
