@@ -1,5 +1,11 @@
 [
   {
+    "slug": "mocking-node-using-sinon",
+    "title": "Explore Mocking In Node.js Using Sinon",
+    "description": "Unit testing and mocking in Node.js with Sinon, get familiar with basic Spies, Stubs, Fakes, and Mocks, concepts.",
+    "category": "blogs"
+  },
+  {
     "slug": "pytest-caplog",
     "title": "Capturing Logs with Pytest Can't Be Easier",
     "description": "Pytest's built-in caplog fixture to capture log messages is nothing but amazing. Capture logs for unit testing can't get easier",
