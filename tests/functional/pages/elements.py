@@ -3,6 +3,7 @@ NAVBAR_BLOG_POSTS_LINK_XPATH = '//*[@id="__next"]/div/div[1]/div[1]/div/div/nav/
 NAVBAR_ABOUT_ME_LINK_XPATH = '//*[@id="__next"]/div/div[1]/div[1]/div/div/nav/div[2]/a[1]'
 NAVBAR_LOGO_LINK_XPATH = '//*[@id="__next"]/div/div[1]/div[1]/div/div/nav/div[1]/div/a'
 NAVBAR_SEARCH_LINK_XPATH = '//*[@id="search-input"]'
+NAVBAR_SEARCH_BOX_RESULTS_XPATH = '//*[@id="__next"]/div/div[1]/div[1]/div/div/nav/div[3]/ul'
 
 HOMEPAGE_MAIN_PIC_XPATH = '//*[@id="__next"]/div/div[1]/div[2]/span/img'
 HOMEPAGE_ALL_BLOG_POSTS_BUTTON_XPATH = '//*[@id="__next"]/div/div[1]/div[1]/main/div/div/div[1]/a'
