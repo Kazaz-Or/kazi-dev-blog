@@ -5,7 +5,7 @@ author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/APM_summary_tiles.png
 date: "2023-07-03"
-tags: ["Python", "FastAPI", "DevOps"]
+tags: ["Python", "FastAPI", "DevOps", "Backend"]
 ---
 
 I'm not really sure why, but for some reason I couldn't find many references on troubleshooting and setup NewRelic with FastAPI. I'm not sure if it's because FastAPI is still fairly new, or maybe it's because it's so simple to setup that no one really bothered to write about it, so I thought there's no harm on doing so.

@@ -5,7 +5,7 @@ author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/fastapi-vscode.png
 date: "2023-03-23"
-tags: ["Python", "FastAPI"]
+tags: ["Python", "FastAPI", "Backend"]
 ---
 
 Let's begin with a brief, high-level explanation of middleware. In software development, middleware refers to a helper component that connects different parts of an application. It commonly acts as a mediator between a client and server, facilitating communication and data exchange. 

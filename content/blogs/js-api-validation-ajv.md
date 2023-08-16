@@ -5,7 +5,7 @@ author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: https://res.cloudinary.com/practicaldev/image/fetch/s--3k4BZzLZ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3sx188mik9cm2o04867f.jpg
 date: "2023-07-09"
-tags: ["JavaScript", "NodeJS"]
+tags: ["JavaScript", "NodeJS", "Backend"]
 ---
 
 Before we dive into hands on examples of such validation, let's first understand what is AJV library and see what other options I explored at work when I was in charge of a task to implement such validator in one of our JS services.
