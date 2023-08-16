@@ -1,5 +1,11 @@
 [
   {
+    "slug": "my-100daysofcode-journey",
+    "title": "My 100 Days of Code Journey",
+    "description": "The 100 days of code is a true challenge. I've decided to take it on and document my journey.",
+    "category": "blogs"
+  },
+  {
     "slug": "mocking-node-using-sinon",
     "title": "Explore Mocking In Node.js Using Sinon",
     "description": "Unit testing and mocking in Node.js with Sinon, get familiar with basic Spies, Stubs, Fakes, and Mocks, concepts.",
