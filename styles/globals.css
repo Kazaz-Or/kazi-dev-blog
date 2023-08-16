@@ -36,10 +36,73 @@
     width: auto;
   }
   
-  .tooltip-hidden {
-    transform: translateX(-50%) scale(0.9);
-    opacity: 0;
-    visibility: hidden;
-    white-space: nowrap;
-    width: auto;
-  }
+.tooltip-hidden {
+  transform: translateX(-50%) scale(0.9);
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  width: auto;
+}
+
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.error-content {
+  width: 60%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.error-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.error-description {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #7f8c8d;
+}
+
+.error-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #3498db;
+  transition: background-color 0.3s ease;
+}
+
+.error-button:hover {
+  background-color: #2980b9;
+}
+
+.contact-feedback-description {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  color: #7f8c8d;
+}
+
+.linkedin-link:hover {
+  text-decoration: underline;
+  color: #0073b1;
+}
