@@ -5,7 +5,7 @@ author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/rewire.jpg
 date: "2023-03-19"
-tags: ["JavaScript", "NodeJS", "Testing"]
+tags: ["JavaScript", "NodeJS", "Testing", "Rewire"]
 ---
 
 I'll start with a full disclosure - Up until now, I have only written unit tests using Jest. However, at my current job, I had the opportunity to work on a small project that allowed me to choose a new testing library.
