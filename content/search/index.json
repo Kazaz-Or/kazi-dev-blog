@@ -1,5 +1,11 @@
 [
   {
+    "slug": "fastapi-background-tasks",
+    "title": "FastAPI Background Tasks - Introduction Guide",
+    "description": "FastAPI feature for lightweight background tasks (functions) that will run in parallel with your main application.",
+    "category": "blogs"
+  },
+  {
     "slug": "my-100daysofcode-journey",
     "title": "My 100 Days of Code Journey",
     "description": "The 100 days of code is a true challenge. I've decided to take it on and document my journey.",
