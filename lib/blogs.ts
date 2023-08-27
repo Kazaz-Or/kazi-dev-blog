@@ -29,6 +29,13 @@ const getBlogBySlug = (slug: string) => {
     return getBlog(fileName);
 }
 
+const getDraftBlogBySlug = async (slug: string): Promise<Blog> => {
+    const draftBlog = getBlogBySlug(slug);
+    draftBlog.content = await markdownToHtml(draftBlog.content);
+    return draftBlog;
+}
+
+
 const getBlogByNameWithMarkdown = async (slug: string): Promise<Blog> => {
     const blog = getBlogBySlug(slug);
     blog.content = await markdownToHtml(blog.content);
@@ -54,6 +61,7 @@ const getRelatedBlogs = (tags: string[], excludeSlug: string): Blog[] => {
 export {
     getBlogs,
     getBlogsSlugs,
+    getDraftBlogBySlug,
     getBlogByNameWithMarkdown,
     getBlog,
     getBlogBySlug,

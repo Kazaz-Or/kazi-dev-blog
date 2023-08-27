@@ -10,7 +10,7 @@ import { PageLayout } from '@components/layouts';
 import { BlogHeader } from '@components/blogs';
 import RelatedBlogs from '@components/blogs/RelatedBlogs';
 
-import { getBlogByNameWithMarkdown, getBlogsSlugs, getRelatedBlogs } from '@lib/blogs';
+import { getBlogByNameWithMarkdown, getBlogsSlugs, getRelatedBlogs, getDraftBlogBySlug } from '@lib/blogs';
 import { Blog } from '@interfaces/Blog';
 
 
@@ -91,11 +91,18 @@ interface Params extends ParsedUrlQuery {
 
 export const getStaticProps: GetStaticProps<Props, Params> = async (context) => {
   const { slug } = context.params!;
-  const blog = await getBlogByNameWithMarkdown(slug);
+  let blog;
+  
+  if (context.preview) {
+      // Fetch draft content when in preview mode.
+      blog = await getDraftBlogBySlug(slug);
+  } else {
+      blog = await getBlogByNameWithMarkdown(slug);
+  }
+  
   const relatedBlogs = getRelatedBlogs(blog.tags, blog.slug);
-
   return {
-    props: { blog, relatedBlogs }
+      props: { blog, relatedBlogs }
   }
 }
 
