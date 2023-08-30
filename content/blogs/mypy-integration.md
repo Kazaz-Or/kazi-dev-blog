@@ -129,6 +129,30 @@ The error message will be very clear what went wrong:
 
 - Remember the `Any` type question? well, I got to know Generics after some research. I Should have used Generics in many cases which can provide us much better solution for type Annotating even unknown types. Awesome and detailed explanation can be found here - [Python Typing Generics and Python 3.11 Variadic Generics](https://www.youtube.com/watch?v=7Chd5gPHlDg&ab_channel=AnthonyShaw). Seriously, it's one of the best detailed explanation I've seen so far.
 
+- Our Internal Packages needs to be marked as type safe -
+
+An internal Python library we're using in some of our services was flagged by mypy as not safe although I already implemented types in the library.
+After some research I found out that I need to add a `py.typed` file to the package. [PEP 561 -- Distributing and Packaging Type Information](https://www.python.org/dev/peps/pep-0561/).
+
+After reading PEP-561 I realized I should have included a py.typed file, or the type checker won't use the type hints provided by the package.
+It's fairly simple to include this file: just touch a `py.typed` file in your package root directory and include it in your distribution.
+
+I'm using poetry, so I added
+
+```toml
+packages = [
+  {include = "mypackage"},
+  {include = "mypackage/py.typed"},
+]
+```
+
+If you're using `setup.py` (which you shouldn't), you can add package_data to setup call:
+
+```python
+setup(
+    package_data={"mypackage": ["py.typed"]},
+)
+```
 
 __Common Issues__
 
