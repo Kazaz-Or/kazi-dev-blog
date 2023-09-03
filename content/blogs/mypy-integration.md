@@ -4,7 +4,7 @@ description: I've assigned with a task to integrate MyPy into our Python service
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: https://res.cloudinary.com/practicaldev/image/fetch/s---hNYwjmj--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w6d2pm4it1rwdvew7amx.png
-date: "2023-09-4"
+date: "2023-09-03"
 tags: ["Python"]
 ---
 
