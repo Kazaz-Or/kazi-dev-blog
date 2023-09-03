@@ -1,5 +1,11 @@
 [
   {
+    "slug": "mypy-integration",
+    "title": "Integration of MyPy into Python Our Services",
+    "description": "I've assigned with a task to integrate MyPy into our Python services. Here's what I've learned so far (and still learning).",
+    "category": "blogs"
+  },
+  {
     "slug": "fastapi-background-tasks",
     "title": "FastAPI Background Tasks - Introduction Guide",
     "description": "FastAPI feature for lightweight background tasks (functions) that will run in parallel with your main application.",
