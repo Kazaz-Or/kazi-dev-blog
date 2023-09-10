@@ -4,7 +4,7 @@ description: Using only LTS versions of Ubuntu - The benefits explained.
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: https://res.cloudinary.com/practicaldev/image/fetch/s--Gx5KGHeG--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/a6piejdhzf2nhsfixe09.png
-date: "2023-09-10"
+date: "2023-09-14"
 tags: ["Linux", "Ubuntu"]
 ---
 
