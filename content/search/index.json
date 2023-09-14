@@ -1,5 +1,11 @@
 [
   {
+    "slug": "ubuntu-lts",
+    "title": "Why You Should Only Use LTS Version of Ubuntu",
+    "description": "Using only LTS versions of Ubuntu - The benefits explained.",
+    "category": "blogs"
+  },
+  {
     "slug": "mypy-integration",
     "title": "Integration of MyPy into Python Our Services",
     "description": "I've assigned with a task to integrate MyPy into our Python services. Here's what I've learned so far (and still learning).",
