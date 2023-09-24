@@ -4,7 +4,7 @@ description: By customizing your git log output, you can make your Git logs look
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1540&q=50
-date: "2023-09-19"
+date: "2023-09-24"
 tags: ["General", "git"]
 ---
 
