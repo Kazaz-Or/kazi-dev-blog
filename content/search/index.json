@@ -1,5 +1,11 @@
 [
   {
+    "slug": "pre-commit",
+    "title": "Leverage Pre-Commit Hooks to Improve Your Git Workflow",
+    "description": "By customizing your git log output, you can make your Git logs look exactly the way you want which could make your life easier.",
+    "category": "blogs"
+  },
+  {
     "slug": "git-log",
     "title": "Customizing Your Git Log Output",
     "description": "By customizing your git log output, you can make your Git logs look exactly the way you want which could make your life easier.",
