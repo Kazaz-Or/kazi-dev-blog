@@ -1,6 +1,6 @@
 ---
 title: Leverage Pre-Commit Hooks to Improve Your Git Workflow
-description: By customizing your git log output, you can make your Git logs look exactly the way you want which could make your life easier.
+description: Discover how pre-commit hooks streamline workflows, ensure code quality, and simplify collaborations using a real-world example.
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/pre-commit.png
