@@ -192,6 +192,34 @@ The hypothetical function `generate_query_for_service` is responsible for genera
 
 With this structure, you're dynamically testing the function with multiple dates, ensuring it works across various boundary conditions like month ends, year starts, etc.
 
+__Parametrization for Testing Common Web Components__
+
+There are some cases where you have components that are used in multiple places in your application. For example, you might have a navigation bar component that displays on all of your website pages. So you might want to test that component in isolation, but also test it in the context of different pages, this can be done easily with parametrization.
+
+```python
+import pytest
+
+
+test_data = [
+    ('https://www.kazis.dev/', "homepage"),
+    ('https://www.kazis.dev/about', "about page"),
+    ('https://www.kazis.dev/blogs', "blogs page"),
+    ('https://www.kazis.dev/blogs/python-type-checking', "blog page")
+]
+
+@pytest.mark.parametrize("test_url, test_id", test_data, ids=[item[1] for item in test_data])
+def test_logo_element_exists(sync_page, test_url, test_id):
+    home_page = NavBar(sync_page)
+    home_page.open(test_url)
+    link = sync_page.locator('role=link >> text=Kazis Dev Blog Kazi\'s Dev Blog')
+    assert link, "Link not found."
+```
+
+So in this example we're using Playwright test framework, but the same concept can be applied to any other framework. We have a list of tuples, each tuple contains a URL and a test ID. The test ID is used to identify the test in the report and display it in every test execution.
+We then use the `parametrize` decorator to pass the URL and test ID to the test function. We also use the `ids` argument to specify the test ID for each test case.
+
+And in the test function itself we assert that the logo element exists on each page that we're providing as an input. This test will run for each URL in the list and it's a classic example how we can test simple functionality of a web component that doesn't change on different pages.
+
 
 To conclude,
 Pytest parametrization is a powerful feature that reduces redundancy, improves test clarity, and enhances the reusability of test code. These are just a few examples showcasing its capabilities. Using parametrization, you can write more concise and robust tests, and that's without mentioning other out of the box plugins which support pytest.
