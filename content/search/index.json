@@ -1,5 +1,11 @@
 [
   {
+    "slug": "pytest-parametrize",
+    "title": "Powerful Pytest Parametrization",
+    "description": "I absolutely love using pytest as my go-to testing tool whenever i'm working on a Python project. Pytest Parametrization is one of reasons why.",
+    "category": "blogs"
+  },
+  {
     "slug": "hamas-is-isis",
     "title": "Hamas is ISIS",
     "description": "Gaza have nurtured Hamas and its violent radical ideology; Hamas reveled its true agendas and idealogy which is the same as ISIS.",
