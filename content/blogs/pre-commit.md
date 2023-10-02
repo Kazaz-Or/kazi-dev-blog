@@ -4,7 +4,7 @@ description: Discover how pre-commit hooks streamline workflows, ensure code qua
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/pre-commit.png
-date: "2023-09-29"
+date: "2023-10-02"
 tags: ["General", "git"]
 ---
 
