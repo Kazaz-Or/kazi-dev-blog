@@ -1,8 +1,14 @@
 [
   {
+    "slug": "hamas-is-isis",
+    "title": "Hamas is ISIS",
+    "description": "Gaza have nurtured Hamas and its violent radical ideology; Hamas reveled its true agendas and idealogy which is the same as ISIS.",
+    "category": "blogs"
+  },
+  {
     "slug": "pre-commit",
     "title": "Leverage Pre-Commit Hooks to Improve Your Git Workflow",
-    "description": "By customizing your git log output, you can make your Git logs look exactly the way you want which could make your life easier.",
+    "description": "Discover how pre-commit hooks streamline workflows, ensure code quality, and simplify collaborations using a real-world example.",
     "category": "blogs"
   },
   {
