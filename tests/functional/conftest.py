@@ -4,7 +4,7 @@ from playwright.sync_api import sync_playwright
 
 @pytest.fixture(scope="session")
 def base_url():
-    return "https://www.kazis.dev/"
+    return "https:localhost:3000"
 
 
 @pytest.fixture(scope="session")
@@ -31,8 +31,8 @@ def sync_page(browser):
 @pytest.fixture
 def additional_paths():
     return [
-        ("https://www.kazis.dev/", "homepage"),
-        ("https://www.kazis.dev/about", "about page"),
-        ("https://www.kazis.dev/blogs", "blogs page"),
-        ("https://www.kazis.dev/blogs/python-type-checking", "blog page")
+        ("https:localhost:3000", "homepage"),
+        ("https:localhost:3000/about", "about page"),
+        ("https:localhost:3000/blogs", "blogs page"),
+        ("https:localhost:3000/blogs/python-type-checking", "blog page")
     ]

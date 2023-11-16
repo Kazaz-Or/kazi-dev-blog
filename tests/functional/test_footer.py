@@ -6,10 +6,10 @@ from functional.pages.footer import Footer
 
 
 test_data = [
-    ('https://www.kazis.dev/', "homepage"),
-    ('https://www.kazis.dev/about', "about page"),
-    ('https://www.kazis.dev/blogs', "blogs page"),
-    ('https://www.kazis.dev/blogs/python-type-checking', "blog page")
+    ('https:localhost:3000/', "homepage"),
+    ('https:localhost:3000/about', "about page"),
+    ('https:localhost:3000/blogs', "blogs page"),
+    ('https:localhost:3000/blogs/python-type-checking', "blog page")
 ]
 
 
@@ -98,4 +98,12 @@ def test_footer_github_svg_exists(sync_page, test_url, test_id):
     home_page = Footer(sync_page)
     home_page.open(test_url)
     element_exists = home_page.check_element_exists(xpath=elements.FOOTER_GITHUB_SVG_XPATH)
+    assert element_exists, "Element not found."
+
+
+@pytest.mark.parametrize("test_url, test_id", test_data, ids=[item[1] for item in test_data])
+def test_footer_israel_flag_svg_exists(sync_page, test_url, test_id):
+    home_page = Footer(sync_page)
+    home_page.open(test_url)
+    element_exists = home_page.check_element_exists(xpath=elements.FOOTER_ISRAEL_FLAG_SVG_XPATH)
     assert element_exists, "Element not found."

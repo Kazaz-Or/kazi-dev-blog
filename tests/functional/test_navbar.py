@@ -4,10 +4,10 @@ from functional.pages import elements
 from functional.pages.navbar import NavBar
 
 test_data = [
-    ('https://www.kazis.dev/', "homepage"),
-    ('https://www.kazis.dev/about', "about page"),
-    ('https://www.kazis.dev/blogs', "blogs page"),
-    ('https://www.kazis.dev/blogs/python-type-checking', "blog page")
+    ('https:localhost:3000/', "homepage"),
+    ('https:localhost:3000/about', "about page"),
+    ('https:localhost:3000/blogs', "blogs page"),
+    ('https:localhost:3000/blogs/python-type-checking', "blog page")
 ]
 
 
