@@ -21,6 +21,7 @@ FOOTER_CR_YEAR_XPATH = '//*[@id="__next"]/footer/div/p/span'
 FOOTER_LINKEDIN_SVG_XPATH = '//*[@id="__next"]/footer/div/div/a[1]'
 FOOTER_TWITTER_SVG_XPATH = '//*[@id="__next"]/footer/div/div/a[2]'
 FOOTER_GITHUB_SVG_XPATH = '//*[@id="__next"]/footer/div/div/a[3]'
+FOOTER_ISRAEL_FLAG_SVG_XPATH = '//*[@id="SVGRepo_iconCarrier"]/path[2]'
 
 BLOGS_CATEGORIES_PYTHON_TAG = '//*[@id="__next"]/div/div[2]/div/div[1]/div/a[1]'
 BLOGS_CATEGORIES_FIRST_ARTICLE_XPATH = '//*[@id="__next"]/div/div[2]/div/div[1]/div[1]/a/div/span/img'

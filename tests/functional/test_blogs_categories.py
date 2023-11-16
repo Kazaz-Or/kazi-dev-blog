@@ -1,4 +1,3 @@
-import pytest
 from functional.pages import elements
 from functional.pages.blogs_categories import BlogCategories
 
