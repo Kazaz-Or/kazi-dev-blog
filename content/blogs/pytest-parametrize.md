@@ -4,7 +4,7 @@ description: I absolutely love using pytest as my go-to testing tool whenever i'
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/pytest-param.webp
-date: "2023-10-06"
+date: "2023-11-20"
 tags: ["Python", "Pytest", "Testing"]
 ---
 
