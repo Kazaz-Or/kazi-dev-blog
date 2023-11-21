@@ -7,8 +7,8 @@ import { navigation } from '../navbar/navigation';
 const IsraelFlagIcon = (props: any) => (
     <svg viewBox="0 0 24 24" {...props}>
      <svg viewBox="0 0 36 36" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" fill="#000000">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
         <path fill="#EDECEC" d="M20.666 19l-.467.809h.934zM18 21.618l.467-.809h-.934z"></path>
         <path fill="#EEE" d="M0 25h36V11H0v14zM.294 7.5h35.413A4 4 0 0 0 32 5H4A3.999 3.999 0 0 0 .294 7.5z"></path>
