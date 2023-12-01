@@ -1,5 +1,11 @@
 [
   {
+    "slug": "niceness-linux",
+    "title": "Linux Process Prioritization with Niceness",
+    "description": "Get to know the Linux process priority and Niceness.",
+    "category": "blogs"
+  },
+  {
     "slug": "pytest-parametrize",
     "title": "Powerful Pytest Parametrization",
     "description": "I absolutely love using pytest as my go-to testing tool whenever i'm working on a Python project. Pytest Parametrization is one of reasons why.",
