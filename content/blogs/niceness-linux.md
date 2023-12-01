@@ -4,7 +4,7 @@ description: Get to know the Linux process priority and Niceness.
 author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: /images/niceness-linux.webp
-date: "2023-11-20"
+date: "2023-12-01"
 tags: ["General", "Linux"]
 ---
 
