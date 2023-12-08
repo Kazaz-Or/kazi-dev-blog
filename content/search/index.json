@@ -1,5 +1,11 @@
 [
   {
+    "slug": "hosted-machines-monitoring",
+    "title": "Monitor Your Hosted Local Machines with OpenTelemetry Collector Contrib",
+    "description": "Learn how to seamlessly integrate OpenTelemetry Collector Contrib with Coralogix for efficient monitoring of local hosted machines.",
+    "category": "blogs"
+  },
+  {
     "slug": "niceness-linux",
     "title": "Linux Process Prioritization with Niceness",
     "description": "Get to know the Linux process priority and Niceness.",
