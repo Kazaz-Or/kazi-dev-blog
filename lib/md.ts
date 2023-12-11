@@ -12,14 +12,12 @@ import { Blog } from '@interfaces/Blog';
 const getDir = (path: string) => join(process.cwd(), path);
 
 const getFileNames = (dir: string): string[] => {
-    console.log("Getting file names...");
     return fs.readdirSync(dir);
 }
 
 const getItemInPath = (filePath: string): MarkdownItem => {
     const fileContent = fs.readFileSync(filePath, "utf8");
     const { data, content } = matter(fileContent);
-    console.log("Extracting blog content and metadata object...");
     return { ...data, content } as MarkdownItem;
 }
 
@@ -28,7 +26,6 @@ const getAllItems = (fileNames: string[], get: (name: string) => MarkdownItem) =
     const items = fileNames
         .map((name) => get(name))
         .sort((item1, item2) => (item1.date > item2.date ? -1 : 1))
-    console.log("Getting all items...");
     return items;
 }
 
@@ -39,7 +36,6 @@ const markdownToHtml = async (markdown: string) => {
     .use(remarkGfm)
     .process(markdown);
 
-    console.log("Converting markdown to HTML...");
     return result.toString();
 }
 
