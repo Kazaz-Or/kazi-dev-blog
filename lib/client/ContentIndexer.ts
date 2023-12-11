@@ -17,12 +17,10 @@ class ContentIndexer {
 
     public search(query: string): SearchContent[] {
         const results = this.searchEngine.search(query);
-        console.log("Searching and returning search results");
         return results as SearchContent[];
     }
 
     private buildIndex() {
-        console.log("Building search index...");
         this.searchEngine = new JsSearch.Search("slug");
         this.searchEngine.addIndex("title");
         this.searchEngine.addIndex("description");
