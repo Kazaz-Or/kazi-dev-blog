@@ -1,5 +1,11 @@
 [
   {
+    "slug": "minimal-cli-appeal",
+    "title": "Easy Minimal CLI Using Appeal Library",
+    "description": "In continuation to my previous post, I'll show you how to create a minimal and compatible CLI using the Appeal library.",
+    "category": "blogs"
+  },
+  {
     "slug": "hosted-machines-monitoring",
     "title": "Monitor Your Hosted Local Machines with OpenTelemetry Collector Contrib",
     "description": "Learn how to seamlessly integrate OpenTelemetry Collector Contrib with Coralogix for efficient monitoring of local hosted machines.",
