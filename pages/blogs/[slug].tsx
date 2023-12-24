@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next/types';
 import Link from 'next/link';
+import Head from 'next/head';
 
 import { ParsedUrlQuery } from 'querystring';
 import hljs from 'highlight.js/lib/common';
@@ -36,6 +37,14 @@ const copyToClipboard = () => {
 
   return (
     <>
+    <Head>
+        <title>{blog.title}</title>
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={blog.title} />
+        <meta property="og:description" content={blog.description} />
+        <meta property="og:url" content={`https://kazis.dev/blogs/${blog.slug}`} />
+        <meta property="og:image" content={blog.coverImage} />
+    </Head>
       <PageLayout pageTitle={blog.title}>
         <div className="w-full sm:w-2/3 m-auto">
           <BlogHeader blog={blog}/>
