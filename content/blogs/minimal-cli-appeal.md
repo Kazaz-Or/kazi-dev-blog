@@ -5,7 +5,7 @@ author: Or Kazaz
 authorImage: https://avatars.githubusercontent.com/u/83350680?v=4
 coverImage: https://res.cloudinary.com/practicaldev/image/fetch/s--Aj0NNAUm--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/90bvqpuit9ty65lu3rzx.jpg
 date: "2023-12-18"
-tags: ["Python"]
+tags: ["Python", "DevOps"]
 ---
 
 In continuation to my [previous post](./hosted-machines-monitoring), I took the OpenTelemetry Collector Contrib project and wrapped it in a minimal CLI using the [Appeal library](https://github.com/larryhastings/appeal/). This CLI is also compatible for all the common OS's (Windows, MacOS and Linux).
