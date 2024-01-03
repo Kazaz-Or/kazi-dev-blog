@@ -1,5 +1,11 @@
 [
   {
+    "slug": "markdown-linters",
+    "title": "Markdown Linters for Your Docs Repo",
+    "description": "Do you have a repo that contains important documentation? Streamline your documentation with Markdown linters to enhance documentation quality.",
+    "category": "blogs"
+  },
+  {
     "slug": "minimal-cli-appeal",
     "title": "Easy Minimal CLI Using Appeal Library",
     "description": "In continuation to my previous post, I'll show you how to create a minimal and compatible CLI using the Appeal library.",
