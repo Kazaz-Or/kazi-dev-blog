@@ -1,5 +1,11 @@
 [
   {
+    "slug": "makefiles-in-sw-dev",
+    "title": "Why Makefile is One of My Essentials Tools in Every Software Project",
+    "description": "Makefiles are a cornerstone tool in the software development process, particularly useful for streamlining and automating the build process.",
+    "category": "blogs"
+  },
+  {
     "slug": "markdown-linters",
     "title": "Markdown Linters for Your Docs Repo",
     "description": "Do you have a repo that contains important documentation? Streamline your documentation with Markdown linters to enhance documentation quality.",
