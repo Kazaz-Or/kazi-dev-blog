@@ -8,7 +8,8 @@ const nextConfig = {
     "images.unsplash.com",
     "avatars.githubusercontent.com",
     "user-images.githubusercontent.com",
-    "cdn.stocksnap.io"]
+    "cdn.stocksnap.io",
+    "media.dev.to"]
   }
 }
 

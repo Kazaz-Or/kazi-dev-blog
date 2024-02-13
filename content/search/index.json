@@ -1,5 +1,11 @@
 [
   {
+    "slug": "tests-workflow-matrix",
+    "title": "GitHub Actions for Dynamic Cross-Platform Testing",
+    "description": "Automate cross-platform testing with GitHub Actions, using dynamic matrices for efficient, targeted tests.",
+    "category": "blogs"
+  },
+  {
     "slug": "makefiles-in-sw-dev",
     "title": "Why Makefile is One of My Essentials Tools in Every Software Project",
     "description": "Makefiles are a cornerstone tool in the software development process, particularly useful for streamlining and automating the build process.",
